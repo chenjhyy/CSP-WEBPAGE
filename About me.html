@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<script src="https://kit.fontawesome.com/1fe045ede3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+
+<title>About me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4c89af;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<div class="header">
+  <h2>About me</h2>
+</div>
+
+<ul>
+  <li><a class="active" href="file:///Users/a1/Desktop/new/index.html">Home</a></li>
+  <li><a href="file:///Users/a1/Desktop/html/index.html">Basic Info</a></li>
+ 
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="video">
+
+<video width="600" controls>
+  <source src="shipin.mp4" type="video/mp4">
+  <source src="shipin.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p>
+<b><a  style="text-decoration: none; color: #2b2b2b "href="https://www.instagram.com/blackpinkofficial/?hl=en" target="_blank"> BLACKPINK IN YOUR AREA</a></b>
+</p>
+
+</div>
+
+
+
+
+
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Hobbies</h2>
+  
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="SharedImage-90676.png" alt="My idol" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="239980.jpg" alt="Naruto" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="0.jpeg" alt="Barcelona" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="League_of_legends_5ada283ea675089c1cc73ec5-e1527197263343.jpeg" alt="League of Legends" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Dislikes</h2>
+
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="greasy-food-day.jpg" alt="Greasy-food" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="spider.jpg" alt="spider" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="fan.jpg" alt="Annoying" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="re.jpg" alt="Hot" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+
+<div class="footer" >
+  <p>Contact Infomation: <a target="blank" style="color: white; text-decoration: none; "href="https://mail.google.com/mail/u/0/#inbox">Jchen20@damien-hs.edu </a></p>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="gotop">
+
+  <a class="gotop" href=""><i class="fas fa-angle-up"></i></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

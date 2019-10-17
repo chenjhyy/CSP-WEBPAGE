@@ -15,11 +15,9 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Style the header */
 .header {
   background-color: #f1f1f1;
@@ -27,10 +25,7 @@ body {
   text-align: center;
   font-size: 35px;
 }
-
 /* Container for flexboxes */
-
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -41,11 +36,9 @@ ul {
   position: sticky;
   top: 0;
 }
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -53,11 +46,9 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover {
   background-color: #111;
 }
-
 .active {
   background-color: #4c89af;
 }
@@ -117,42 +108,35 @@ li a:hover {
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: Arial;
 }
-
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
   padding: 10px;
 }
-
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8; 
   cursor: pointer; 
 }
-
 .column img:hover {
   opacity: 1;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* The expanding image container */
 .container {
   position: relative;
   display: none;
 }
-
 /* Expanding image text */
 #imgtext {
   position: absolute;
@@ -161,7 +145,6 @@ body {
   color: white;
   font-size: 20px;
 }
-
 /* Closable button inside the expanded image */
 .closebtn {
   position: absolute;
@@ -177,22 +160,39 @@ body {
 
 <div style="text-align:center">
   <h2>Hobbies</h2>
-  <h5>Click them to see details<h5>
+  <h5>Click them to see expanded images<h5>
 </div>
 
 <!-- The four columns -->
 <div class="row">
   <div class="column">
-    <img src="SharedImage-90676.png" alt="My idol" style="width:100%" onclick="myFunction(this);">
-  </div>
+      <div class="kuang">
+    <img src="SharedImage-90676.png" alt="My idol" style="width:100%" onclick="myFunction(this);" >
+    <p>I like their advanced feeling and unique style. Later, when I saw their ensemble, black pink house, I thought that these four girls were not only good-looking and good at dancing, but also had such lovely personalities in private. From here, I was followed by Lisa. She is very good at taking care of her sisters and has a careless personality. She loves to make them laugh. They four are so cute!</p>
+      </div>
+    
+</div>
+
+
   <div class="column">
+    <div class="kuang">
     <img src="239980.jpg" alt="Naruto" style="width:100%" onclick="myFunction(this);">
+    <p>I love naruto's indomitable persistence and the variety of people who fight for what they believe in. The mood of a character in the fire shadow may be similar to what you experience. You can see your own shadow and what you want to seek from many people, and even figure out your own answer.</p> </div>
   </div>
   <div class="column">
+    <div class="kuang">
     <img src="0.jpeg" alt="Barcelona" style="width:100%" onclick="myFunction(this);">
+    <p>Love Barcelona.
+It wasn't just that Barcelona were invincible.
+Not just because of Barcelona's passing and catching.
+And not just because of Barcelona's delightfully attacking football.
+And because of Barcelona's peculiar human touch.
+Also because of Barcelona's red and blue spirit.</p></div>
   </div>
   <div class="column">
+    <div class="kuang">
     <img src="League_of_legends_5ada283ea675089c1cc73ec5-e1527197263343.jpeg" alt="League of Legends" style="width:100%" onclick="myFunction(this);">
+    <p>My love of the culture around league of legends goes beyond the game itself. In turn, put that love back into the game itself. I just like the game itself, its excellent competitiveness, more and more perfect world view, more and more beautiful game, and has been very active, very interesting player environment.</p></div> 
   </div>
 </div>
 
@@ -202,15 +202,6 @@ body {
   <div id="imgtext"></div>
 </div>
 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
 
 
 
@@ -236,42 +227,35 @@ function myFunction(imgs) {
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: Arial;
 }
-
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
   padding: 10px;
 }
-
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8; 
   cursor: pointer; 
 }
-
 .column img:hover {
   opacity: 1;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* The expanding image container */
 .container {
   position: relative;
   display: none;
 }
-
 /* Expanding image text */
 #imgtext {
   position: absolute;
@@ -280,7 +264,6 @@ body {
   color: white;
   font-size: 20px;
 }
-
 /* Closable button inside the expanded image */
 .closebtn {
   position: absolute;
@@ -302,16 +285,23 @@ body {
 <!-- The four columns -->
 <div class="row">
   <div class="column">
+    <div class="kuang">
     <img src="greasy-food-day.jpg" alt="Greasy-food" style="width:100%" onclick="myFunction(this);">
+    <p>Excessive quantity of heat, easy to make fatty liver fat content is too high, not conducive to health. Eating too much oil can negatively affect and harm our health in many ways, not only obesity, from acne to cancer, but also "oil" cannot be removed.</p>
+  </div>
   </div>
   <div class="column">
-    <img src="spider.jpg" alt="spider" style="width:100%" onclick="myFunction(this);">
+    <div class="kuang">
+    <img src="spider.jpg" alt="spider" style="width:100%" onclick="myFunction(this);"> <p>Spiders are horrible, and all the insects with lots of feet. The sight of those worms gives me the creeps. I think, I should be insect phobia. I hate these bugs</p></div>
   </div>
   <div class="column">
+    <div class="kuang">
     <img src="fan.jpg" alt="Annoying" style="width:100%" onclick="myFunction(this);">
-  </div>
+  <p>Too much noise can upset me. Especially I don't like to be disturbed by the noisy environment when I am studying. When I'm focused on what I want to do, I tend to be quiet and do my own thing.</p></div> </div>
   <div class="column">
+    <div class="kuang">
     <img src="re.jpg" alt="Hot" style="width:100%" onclick="myFunction(this);">
+    <p>The hot weather makes me sweat, which makes me uncomfortable. My body was sticky, and I couldn't think. Under the hot sun, I would feel hard to breath.</p></div>
   </div>
 </div>
 
@@ -360,3 +350,4 @@ function myFunction(imgs) {
 
 </body>
 </html>
+
